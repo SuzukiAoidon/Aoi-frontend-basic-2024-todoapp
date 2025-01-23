@@ -12,6 +12,7 @@ export const Title = () => {
 
 
 const StyledText = styled.div`
+
   color: ${COLOR.WHITE};
   ${TEXT.L}; 
   font-family: ${FONTFAMILY.NOTO_SANS};

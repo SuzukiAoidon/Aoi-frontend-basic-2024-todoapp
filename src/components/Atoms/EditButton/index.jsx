@@ -20,7 +20,8 @@ const StyledButton = styled.button`
   border: none;
   border-radius: 50%;
   background-color: ${COLOR.GREEN_TRANSPARENT};
-
+  transition: 0.2;
+  transition: all 0.2s ease;
   img {
     width: 20px;
     height: 20px;

@@ -24,6 +24,7 @@ const StyledAddTaskButton = styled.button`
   padding: 2px 6px;
   border: none;
   border-radius: 12px;
+  transition: all 0.2s ease;
 
   img {
     width: 20px;

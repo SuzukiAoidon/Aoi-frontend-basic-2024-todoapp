@@ -21,6 +21,7 @@ const StyledButton = styled.button`
   background-color: transparent;
   border: 2px solid ${COLOR.LIGHT_GRAY};
   border-radius: 2px;
+  transition: all 0.2s ease;
 
   &:hover img {
     opacity: 1;

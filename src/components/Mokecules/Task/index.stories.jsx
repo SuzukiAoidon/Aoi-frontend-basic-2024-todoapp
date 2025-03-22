@@ -7,6 +7,6 @@ export default {
 export const Default = {
   args: {
     taskName: "taskname",
-    defaultIsEditing: true,
+    defaultIsEditing: false,
   },
 };

@@ -13,6 +13,8 @@ export const AddTaskButton = () => {
   );
 };
 
+export default AddTaskButton;
+
 const StyledAddTaskButton = styled.button`
   display: flex;
   /* justify-content: center; */

@@ -32,6 +32,7 @@ export default function Input({ onEditComplete, defaultValue }) {
 const StyledInput = styled.input`
   display: flex;
   width: 100%;
+  height: 20px;
   padding: 0px 4px;
   border-radius: 2px;
   background: ${COLOR.BLACK};

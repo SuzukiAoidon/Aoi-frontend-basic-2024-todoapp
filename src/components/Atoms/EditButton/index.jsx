@@ -3,13 +3,15 @@ import styled from "styled-components";
 import COLOR from "../../../variables/color";
 import pencil from "../../../assets/svg/pencil.svg";
 
-export const EditButton = () => {
+export const EditButton = ({ onClick }) => {
   return (
-    <StyledButton onClick={() => console.log("clicked")}>
+    <StyledButton onClick={onClick}>
       <img src={pencil} alt="pencil" />
     </StyledButton>
   );
 };
+
+export default EditButton;
 
 const StyledButton = styled.button`
   display: flex;

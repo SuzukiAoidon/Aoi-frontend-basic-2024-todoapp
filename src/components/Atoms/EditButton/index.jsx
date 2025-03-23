@@ -11,8 +11,6 @@ export const EditButton = ({ onClick }) => {
   );
 };
 
-export default EditButton;
-
 const StyledButton = styled.button`
   display: flex;
   justify-content: center;

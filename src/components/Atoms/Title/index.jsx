@@ -9,8 +9,6 @@ export const Title = () => {
   return <StyledText>SIMPLE TODO APP</StyledText>;
 };
 
-export default Title;
-
 const StyledText = styled.div`
   color: ${COLOR.WHITE};
   ${TEXT.L};

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Checkbox from "../../Atoms/Checkbox";
-import Input from "../../Atoms/Input";
-import EditButton from "../../Atoms/EditButton";
+import { Checkbox } from "../../Atoms/Checkbox";
+import { Input } from "../../Atoms/Input";
+import { EditButton } from "../../Atoms/EditButton";
 import COLOR from "../../../variables/color";
 import FONTFAMILY from "../../../variables/font_family";
 
@@ -70,8 +70,10 @@ const StyledNameAndButtonWrapper = styled.div`
 const StyledTaskName = styled.div`
   display: flex;
   width: 100%;
+  /* height: 20px; */
   align-items: flex-start;
   gap: 10px;
+  font-size: 14px;
   color: ${COLOR.LIGHT_GRAY};
   font-family: ${FONTFAMILY.NOTO_SANS};
 `;
@@ -79,7 +81,7 @@ const StyledTaskName = styled.div`
 const StyledEditButtonWrapper = styled.div`
   display: flex;
   width: 20px;
-  height: 20px;
+  /* height: 20px; */
   justify-content: center;
   align-items: center;
 `;

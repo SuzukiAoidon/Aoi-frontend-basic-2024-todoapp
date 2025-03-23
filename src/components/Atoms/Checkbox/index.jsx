@@ -11,8 +11,6 @@ export const Checkbox = () => {
   );
 };
 
-export default Checkbox;
-
 const StyledButton = styled.button`
   display: flex;
   justify-content: center;

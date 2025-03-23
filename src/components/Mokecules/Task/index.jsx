@@ -6,12 +6,12 @@ import { EditButton } from "../../Atoms/EditButton";
 import COLOR from "../../../variables/color";
 import FONTFAMILY from "../../../variables/font_family";
 
-export default function Task({
+export const Task = ({
   onTaskNameChange,
   onTaskComplete,
   taskName,
   defaultIsEditing,
-}) {
+}) => {
   const [isEditing, setIsEditing] = useState(defaultIsEditing);
 
   const onEditComplete = (value) => {
@@ -42,7 +42,7 @@ export default function Task({
       )}
     </StyledWrapper>
   );
-}
+};
 
 const StyledWrapper = styled.div`
   display: flex;
@@ -70,7 +70,6 @@ const StyledNameAndButtonWrapper = styled.div`
 const StyledTaskName = styled.div`
   display: flex;
   width: 100%;
-  /* height: 20px; */
   align-items: flex-start;
   gap: 10px;
   font-size: 14px;
@@ -81,7 +80,6 @@ const StyledTaskName = styled.div`
 const StyledEditButtonWrapper = styled.div`
   display: flex;
   width: 20px;
-  /* height: 20px; */
   justify-content: center;
   align-items: center;
 `;

@@ -15,8 +15,8 @@ export const Task = ({
   const [isEditing, setIsEditing] = useState(defaultIsEditing);
 
   const onEditComplete = (value) => {
-    setIsEditing(false);
     onTaskNameChange(value);
+    setIsEditing(false); //ここに問題あり
   };
 
   const onEditButtonClick = () => {

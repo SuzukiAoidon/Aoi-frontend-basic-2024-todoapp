@@ -6,12 +6,12 @@ export const Input = ({ onEditComplete, defaultValue }) => {
   const inputRef = useRef(null);
 
   const handleBlur = () => {
-    onEditComplete?.(inputRef.current);
+    onEditComplete?.(inputRef.current.value);
   };
 
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
-      onEditComplete?.(inputRef.current);
+      onEditComplete?.(inputRef.current.value);
     }
   };
 

@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import styled from "styled-components";
 import COLOR from "../../../variables/color";
 
-export default function Input({ onEditComplete, defaultValue }) {
+export const Input = ({ onEditComplete, defaultValue }) => {
   const inputRef = useRef(null);
 
   const handleBlur = () => {
@@ -27,15 +27,17 @@ export default function Input({ onEditComplete, defaultValue }) {
       onKeyDown={handleKeyDown}
     />
   );
-}
+};
 
 const StyledInput = styled.input`
   display: flex;
   width: 100%;
+  height: 20px;
   padding: 0px 4px;
   border-radius: 2px;
   background: ${COLOR.BLACK};
   border: none;
+  font-size: 14px;
   color: ${COLOR.LIGHT_GRAY};
   gap: 10px;
   &:focus {

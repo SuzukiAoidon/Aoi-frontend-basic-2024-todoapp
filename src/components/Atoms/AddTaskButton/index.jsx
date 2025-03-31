@@ -4,9 +4,9 @@ import plus from "../../../assets/svg/plus.svg";
 import COLOR from "../../../variables/color";
 import FONTFAMILY from "../../../variables/font_family";
 
-export const AddTaskButton = () => {
+export const AddTaskButton = ({ onClick }) => {
   return (
-    <StyledAddTaskButton onClick={() => console.log("clicked")}>
+    <StyledAddTaskButton onClick={onClick}>
       <img src={plus} alt="AddTaskButton" />
       <StyledText>タスクの追加</StyledText>
     </StyledAddTaskButton>
@@ -15,7 +15,6 @@ export const AddTaskButton = () => {
 
 const StyledAddTaskButton = styled.button`
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   width: 126px;
   height: 24px;
